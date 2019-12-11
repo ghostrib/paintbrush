@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Paint Brush</title>
+  </head>
+  <body>
+    <h3>Draw</h3>
+    <canvas id="canvas"></canvas>
+    <div>
+      <ul>
+        <li>
+          <div id="color-preview"></div>
+        </li>
+        <li>
+          <label for="r">Red</label>
+          <input type="range" min="0" max="255" id="r" step="1" value="0" />
+          <output for="r" id="red">0</output>
+        </li>
+        <li>
+          <label for="g">Green</label>
+          <input type="range" min="0" max="255" id="g" step="1" value="0" />
+          <output for="g" id="green">0</output>
+        </li>
+        <li>
+          <label for="b">Blue</label>
+          <input type="range" min="0" max="255" id="b" step="1" value="0" />
+          <output for="b" id="blue">0</output>
+        </li>
+        <li>
+          <label for="opacity">Opacity</label>
+          <input
+            type="range"
+            min="0"
+            max="100"
+            id="opacity"
+            step="1"
+            value="100"
+          />
+          <output for="opacity" id="opacity-out">1.00</output>
+        </li>
+        <li>
+          <label for="size">Size</label>
+          <input
+            type="range"
+            min="1"
+            max="10"
+            id="brush-size"
+            step="1"
+            value="5"
+          />
+          <output for="size" id="brush-out">5</output>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
